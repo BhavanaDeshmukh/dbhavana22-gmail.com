@@ -8,3 +8,14 @@
      printf("n The Total Number of Processes:");
      scanf("%d", &limit); 
      printf("nEnter Details of %d Processesn", limit);
+     {
+       printf("nEnter Arrival Time:t");
+       scanf("%d", &arrival_time[i]);
+       printf("Enter Burst Time:t");
+       scanf("%d", &burst_time[i]); 
+       temp[i] = burst_time[i];
+      }
+      burst_time[9] = 9999;  
+      for(time = 0; count != limit; time++)
+      {
+            smallest = 9;
