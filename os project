@@ -27,6 +27,7 @@
                   }
             }
             burst_time[smallest]--;
+
             if(burst_time[smallest] == 0)
             {
                   count++;
@@ -36,3 +37,11 @@
             }
       }
      
+            }
+      }
+      average_waiting_time = wait_time / limit;
+      average_turnaround_time = turnaround_time / limit;
+      printf("\nAverage Waiting Time:t%lfn", average_waiting_time);
+      printf("\nAverage Turnaround Time:t%lfn", average_turnaround_time);
+      return 0;
+}
